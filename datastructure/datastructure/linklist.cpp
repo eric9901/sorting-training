@@ -16,13 +16,14 @@ private: node<T> *header, *tailer;
 		 node<T>* current = new node<T>();
 		 cin >> indata;
 		 current->data = indata;
-		 if (header == nullptr&&tailer == nullptr)
+		 if (header == nullptr&&tailer == nullptr)//if it is the first input, set head and tail both equial to current node
 		 {
 			 header = current;
 			 tailer = current;
 		 }
 		 else {
 			 tailer->next = current;
+			 current->head = tailer;
 			 tailer = current;
 		 }
 	};
@@ -35,8 +36,3 @@ private: node<T> *header, *tailer;
 		 cout << current->data << endl;
 	 }
 };
-int main() {
-	linklist<int> list;
-	system("pause");
-	return 0;
-}
