@@ -53,6 +53,6 @@ int main() {
 	a.add(10);
 	a.add(30);
 	a.add(40);
-	cout >> a
+	cout >> a.TreeSearch(20);
 	return 0;
 }

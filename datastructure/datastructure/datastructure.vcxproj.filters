@@ -21,5 +21,8 @@
     <ClCompile Include="binary search tree.cpp">
       <Filter>資源檔</Filter>
     </ClCompile>
+    <ClCompile Include="PriorityQueue.cpp">
+      <Filter>資源檔</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -117,6 +117,7 @@
   <ItemGroup>
     <ClCompile Include="binary search tree.cpp" />
     <ClCompile Include="linklist.cpp" />
+    <ClCompile Include="PriorityQueue.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
