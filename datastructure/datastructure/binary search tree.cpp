@@ -7,14 +7,18 @@ public:
 	int key;
 	node* firstSon, *secondSon, *parent;//firstson for smaller key,second for greater key
 	node() :key(0), firstSon(nullptr), secondSon(nullptr), parent(nullptr) {};
-	~node() { delete firstSon, secondSon, parent; }
+	~node() { 
+		if (firstSon != nullptr) delete firstSon;
+	    if (secondSon != nullptr) delete secondSon;
+		if (parent != nullptr) delete parent;
+	}
 };
 class tree {
 private:
 	node* roof;//head of the tree
 public:
 	tree() :roof(nullptr) {};
-	~tree() { delete roof; };
+	~tree() { if (roof!=nullptr) delete roof; };
 	void add(int indata) {
 		node* addPosition = roof;
 		bool finded = false;
